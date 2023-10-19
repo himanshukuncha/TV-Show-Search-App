@@ -10,17 +10,25 @@
 </head>
 
 <body>
-    <h1 >TV Show Search App</h1>
+
+    <header>
+        <h1>TV Show Search App</h1>
+    </header>
+
     <hr>
-    <form action="" id="searchForm">
-        <div style="padding-left:20px ; padding-bottom: 20px; padding-top: 30px;">
-            <input class="inputbar" type="text" placeholder="TV Show Title" name="query">
-            <button>Search</button>
-        </div>
 
-        <div id="imageContainer" style="padding-left: 20px;"></div>
+    <section>
+        <form action="" id="searchForm">
+            <div class="form-group">
+                <label for="query">TV Show Title:</label>
+                <input class="inputbar" id="query" type="text" placeholder="TV Show Title" name="query">
+                <button>Search</button>
+            </div>
+        </form>
+    </section>
 
-    </form>
+    <section id="imageContainer" class="image-container"></section>
+
     <script src="index.js"></script>
 
 </body>
